@@ -1,0 +1,19 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Stonecrafting:items#Brick",
+        "stackId": "Stonecrafting:items#Brick"
+    },
+    "DisplayName": {
+        "name": "Brick"
+    },
+    "CraftingStationIngredient": {
+        "type": "Stonecrafting:brick"
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+          "A brick made from heating up clay that can be used for building structures."
+        ]
+    }
+}

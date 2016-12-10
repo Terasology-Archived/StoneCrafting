@@ -1,0 +1,32 @@
+{
+    "ProcessDefinition": {
+        "processType": "Stonecrafting:BasicStonecraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Tools|Stonecrafting:Quern",
+
+        "recipeComponents": ["6*Woodcrafting:stone", "2*Woodcrafting:stick"],
+        "recipeTools": ["1*hammer"],
+
+        "blockResult": "1*Stonecrafting:quern"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stone": 6,
+            "Woodcrafting:stick": 2
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Stonecrafting:quern": 1
+        }
+    }
+}

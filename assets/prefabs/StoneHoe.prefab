@@ -1,0 +1,25 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Stonecrafting:items#StoneHoe"
+    },
+    "DisplayName": {
+        "name": "Stone Hoe"
+    },
+    "Durability": {
+        "durability": 100,
+        "maxDurability": 100
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Hoe"
+        ]
+    },
+    "Hoe": {},
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+          "A hoe made out of stone that can be used for tilling."
+        ]
+    }
+}

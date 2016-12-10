@@ -1,0 +1,31 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Stonecrafting:items#StoneHammer",
+        "damageType": "Woodcrafting:hammerDamage"
+    },
+    "DisplayName": {
+        "name": "Stone Hammer"
+    },
+    "Durability": {
+        "durability": 100,
+        "maxDurability": 100
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Hammer"
+        ]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Stonecrafting:hammer"
+    },
+    "CraftingStationTool": {
+        "type": ["hammer"]
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+          "A hammer made out of stone. Can be used for smashing and smelting items."
+        ]
+    }
+}

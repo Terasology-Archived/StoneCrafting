@@ -1,0 +1,50 @@
+{
+    "BlockDropGrammar": {
+        "itemDrops": ["4*Woodcrafting:Stone", "2*Woodcrafting:Stick"]
+    },
+    "InteractionTarget": {},
+    "InteractionScreen": {
+        "screen": "Stonecrafting:Quern"
+    },
+    "Workstation": {
+        "supportedProcessTypes": {
+            "Stonecrafting:MillingProcess": false
+        }
+    },
+    "WorkstationInventory": {
+        "slotAssignments": {
+            "INPUT": {
+                "slotStart": 0,
+                "slotCount": 1
+            },
+            "OUTPUT": {
+                "slotStart": 1,
+                "slotCount": 1
+            }
+        }
+    },
+    "Inventory": {
+        "privateToOwner": false,
+        "itemSlots": [
+            0,
+            0
+        ]
+    },
+    "Health": {
+        "currentHealth": 5,
+        "maxHealth": 5,
+        "regenRate": 1,
+        "waitBeforeRegen": 2,
+        "destroyEntityOnNoHealth": true
+    },
+    "ActAsBlock": {
+        "block": "Woodcrafting:StandardWoodStation"
+    },
+    "DropBlockInventory": {},
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+          "A simple hand mill for grinding grain."
+        ]
+    }
+}

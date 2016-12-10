@@ -1,0 +1,16 @@
+{
+    "shape": "Stonecrafting:Table",
+
+    "hardness": 16,
+
+    "displayName": "Stone Station",
+
+    "categories": ["stone"],
+
+    "tiles": {
+        "top": "Woodcrafting:WoodenTableTopWithHammer",
+        "bottom": "Woodcrafting:WoodenTableBottom",
+        "sides": "Woodcrafting:WoodenTableSides",
+        "center": "Woodcrafting:WoodenTableSides"
+    }
+}

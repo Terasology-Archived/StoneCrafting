@@ -1,0 +1,28 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Stonecrafting:items#StoneAxe",
+        "damageType": "axeDamage"
+    },
+    "DisplayName" : {
+        "name" : "Stone Axe"
+    },
+    "Durability": {
+        "durability": 100,
+        "maxDurability": 100
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Axe"
+        ]
+    },
+    "CraftingStationTool": {
+        "type": ["axe"]
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+          "An axe made out of stone. Can be used for chopping."
+        ]
+    }
+}

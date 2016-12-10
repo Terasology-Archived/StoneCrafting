@@ -1,0 +1,19 @@
+{
+    "shape": "Stonecrafting:Quern",
+
+    "rotation": "horizontal",
+
+    "categories": ["stone"],
+
+    "displayName": "Quern",
+
+    "entity": {
+        "prefab": "Stonecrafting:Quern"
+    },
+
+    "tiles": {
+        "center": "Stonecrafting:Quern"
+    },
+
+    "translucent": true
+}
