@@ -1,0 +1,33 @@
+{
+    "ProcessDefinition": {
+        "processType": "Stonecrafting:BasicStonecraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Tools|Stonecrafting:StoneHoe",
+
+        "recipeComponents": ["1*Woodcrafting:stone", "2*Woodcrafting:twig", "2*Woodcrafting:stick"],
+        "recipeTools": ["1*hammer"],
+
+        "itemResult": "1*Stonecrafting:StoneHoe"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stone": 1,
+            "Woodcrafting:twig": 1,
+            "Woodcrafting:stick": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Stonecrafting:StoneHoe": 1
+        }
+    }
+}
