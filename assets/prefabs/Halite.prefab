@@ -1,0 +1,11 @@
+{
+    "BlockDropGrammar": {
+        "itemDrops": ["2-3*Stonecrafting:RockSalt"]
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+             "A rock that can be broken down into rock salt."
+        ]
+    }
+}

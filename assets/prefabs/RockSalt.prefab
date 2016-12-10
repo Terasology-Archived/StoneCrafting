@@ -1,0 +1,20 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Cooking:items#RockSalt",
+        "stackId": "Cooking:rockSalt"
+    },
+    "DisplayName": {
+        "name": "Rock Salt"
+    },
+    "MillProcessed": {
+        "millLength": 6000,
+        "itemResult": "1*Stonecrafting:TableSalt"
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+             "Less refined and grayish in color, this is the chunky crystal salt used in ice cream machines."
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Cooking:items#GroundSalt",
+        "stackId": "Cooking:tableSalt"
+    },
+    "DisplayName": {
+        "name": "Table Salt"
+    },
+    "CraftingStationIngredient": {
+        "type": "Cooking:salt"
+    },
+    "ItemHelp": {
+        "category": "Stonecrafting",
+        "paragraphText": [
+             "Rock Salt that has been grounded down and refined. Also known as Ground Salt."
+        ]
+    }
+}

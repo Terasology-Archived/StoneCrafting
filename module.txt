@@ -32,6 +32,10 @@
             {
                 "id" : "Workstation",
                 "minVersion" : "1.0.0"
+            },
+            {
+                "id" : "AnotherWorld",
+                "minVersion" : "0.2.0"
             }
     ],
     "serverSideOnly" : false
