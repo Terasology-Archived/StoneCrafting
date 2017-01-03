@@ -16,6 +16,7 @@
 package org.terasology.stoneCrafting.system;
 
 import com.google.common.base.Predicate;
+import org.terasology.entitySystem.entity.EntityManager;
 import org.terasology.entitySystem.entity.EntityRef;
 import org.terasology.entitySystem.prefab.PrefabManager;
 import org.terasology.entitySystem.systems.BaseComponentSystem;
@@ -49,13 +50,14 @@ public class RegisterStonecraftingRecipes extends BaseComponentSystem {
     private BlockManager blockManager;
     @In
     private PrefabManager prefabManager;
+    @In
+    private EntityManager entityManager;
 
     @Override
     public void initialise() {
-        workstationRegistry.registerProcessFactory(Stonecrafting.BASIC_STONECRAFTING_PROCESS_TYPE, new CraftingWorkstationProcessFactory());
         workstationRegistry.registerProcessFactory(Stonecrafting.BASIC_STONECRAFTING_PROCESS, new CraftingWorkstationProcessFactory());
-        workstationRegistry.registerProcessFactory(Stonecrafting.NOVICE_STONECRAFTING_PROCESS_TYPE, new CraftingWorkstationProcessFactory());
-        workstationRegistry.registerProcessFactory(Stonecrafting.STANDARD_STONECRAFTING_PROCESS_TYPE, new CraftingWorkstationProcessFactory());
+        workstationRegistry.registerProcessFactory(Stonecrafting.NOVICE_STONECRAFTING_PROCESS, new CraftingWorkstationProcessFactory());
+        workstationRegistry.registerProcessFactory(Stonecrafting.STANDARD_STONECRAFTING_PROCESS, new CraftingWorkstationProcessFactory());
 
         addWorkstationFormingRecipes();
 
@@ -71,9 +73,9 @@ public class RegisterStonecraftingRecipes extends BaseComponentSystem {
     }
 
     private void addBasicStoneWorkstationBlockShapeRecipes() {
-        addWorkstationBlockShapesRecipe(Stonecrafting.BASIC_STONECRAFTING_PROCESS_TYPE, "Building|Cobble Stone|Stonecrafting:CobbleBlock",
+        addWorkstationBlockShapesRecipe(Stonecrafting.BASIC_STONECRAFTING_PROCESS, "Building|Cobble Stone|Stonecrafting:CobbleBlock",
                 "Woodcrafting:stone", 2, "hammer", 1, "Core:CobbleStone", 1);
-        addWorkstationBlockShapesRecipe(Stonecrafting.STANDARD_STONECRAFTING_PROCESS_TYPE, "Building|Bricks|Stonecrafting:BrickBlock",
+        addWorkstationBlockShapesRecipe(Stonecrafting.STANDARD_STONECRAFTING_PROCESS, "Building|Bricks|Stonecrafting:BrickBlock",
                 "Stonecrafting:brick", 2, "hammer", 1, "Core:Brick", 1);
     }
 
@@ -93,7 +95,7 @@ public class RegisterStonecraftingRecipes extends BaseComponentSystem {
         shapeRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix + ":" + module + ":" + shape).getArchetypeBlock(),
                 blockResultCount * resultMultiplier));
 
-        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix + shape, shapeRecipe));
+        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix + shape, shapeRecipe, null, entityManager));
     }
 
     private void addWorkstationBlockShapesRecipe(String processType, String recipeNamePrefix, String ingredient, int ingredientBasicCount,
@@ -103,7 +105,7 @@ public class RegisterStonecraftingRecipes extends BaseComponentSystem {
         fullBlockRecipe.addRequiredTool(tool, toolDurability);
         fullBlockRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix).getArchetypeBlock(), blockResultCount));
 
-        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix, fullBlockRecipe));
+        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix, fullBlockRecipe, null, entityManager));
 
         addShapeRecipe(processType, recipeNamePrefix, ingredient, ingredientBasicCount, tool, toolDurability, blockResultPrefix, blockResultCount,
                 "Stair", 3, 4, 2);
