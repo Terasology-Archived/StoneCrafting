@@ -1,6 +1,6 @@
 {
     "id" : "Stonecrafting",
-    "version" : "0.1.0-SNAPSHOT",
+    "version" : "1.0.0-SNAPSHOT",
     "author" : "XTariq",
     "displayName" : "Stonecrafting",
     "description" : "Module that introduces crafting of several stone-based items through workstations.",
@@ -19,11 +19,11 @@
             },
             {
                 "id" : "WorkstationCrafting",
-                "minVersion" : "0.1.0"
+                "minVersion" : "1.0.0"
             },
             {
-                "id" : "Woodcrafting",
-                "minVersion" : "0.1.0"
+                "id" : "WoodCrafting",
+                "minVersion" : "1.0.0"
             },
             {
                 "id" : "MultiBlock",
