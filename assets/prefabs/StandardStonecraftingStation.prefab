@@ -64,6 +64,7 @@
         "waitBeforeRegen": 2,
         "destroyEntityOnNoHealth": true
     },
+    "Network": {},
     "ActAsBlock": {
         "block": "Stonecrafting:StandardStoneStation"
     },
