@@ -1,4 +1,5 @@
 {
+    "Network": {},
     "BlockDropGrammar": {
         "itemDrops": ["4*Woodcrafting:Stone", "2*Woodcrafting:Stick"]
     },
@@ -31,8 +32,8 @@
         ]
     },
     "Health": {
-        "currentHealth": 5,
-        "maxHealth": 5,
+        "currentHealth": 10,
+        "maxHealth": 10,
         "regenRate": 1,
         "waitBeforeRegen": 2,
         "destroyEntityOnNoHealth": true

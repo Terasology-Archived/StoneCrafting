@@ -2,6 +2,7 @@
     "DisplayName": {
         "name": "Basic Stonecrafting Station"
     },
+    "Network": {},
     "BlockDropGrammar": {
         "blockDrops": ["2*Woodcrafting:WoodenTable"]
     },

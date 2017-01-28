@@ -16,6 +16,8 @@
 package org.terasology.milling.processPart;
 
 import org.terasology.entitySystem.Component;
+import org.terasology.network.Replicate;
 
+@Replicate
 public class MillProcessingComponent implements Component {
 }
