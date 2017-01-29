@@ -2,6 +2,7 @@
     "DisplayName": {
         "name": "Standard Stonecrafting Station"
     },
+    "Network": {},
     "BlockDropGrammar": {
         "itemDrops": ["10*Stonecrafting:Brick"]
     },

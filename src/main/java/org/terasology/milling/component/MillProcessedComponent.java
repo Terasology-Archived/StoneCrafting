@@ -16,9 +16,13 @@
 package org.terasology.milling.component;
 
 import org.terasology.entitySystem.Component;
+import org.terasology.network.Replicate;
 
 public class MillProcessedComponent implements Component {
+    @Replicate
     public long millLength;
+    @Replicate
     public String blockResult;
+    @Replicate
     public String itemResult;
 }
