@@ -12,8 +12,8 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "Stonecrafting:BasicStonecraftingProcess": false,
-            "Stonecrafting:StandardStonecraftingProcess": false,
+            "StoneCrafting:BasicStonecraftingProcess": false,
+            "StoneCrafting:StandardStonecraftingProcess": false,
             "Crafting:UpgradeCraftingWorkstation": false
         }
     },

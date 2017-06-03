@@ -1,6 +1,6 @@
 {
     "ProcessDefinition": {
-        "processType": "Stonecrafting:BasicStonecraftingProcess"
+        "processType": "StoneCrafting:BasicStonecraftingProcess"
     },
     "CraftingStationRecipe": {
         "recipeId": "Tools|Stonecrafting:StoneHammer",

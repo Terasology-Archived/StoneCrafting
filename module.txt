@@ -1,5 +1,5 @@
 {
-    "id" : "Stonecrafting",
+    "id" : "StoneCrafting",
     "version" : "1.0.1-SNAPSHOT",
     "author" : "XTariq",
     "displayName" : "Stonecrafting",
@@ -10,12 +10,8 @@
                 "minVersion": "1.0.0"
             },
             {
-                "id": "InGameHelp",
-                "minVersion": "1.0.0"
-            },
-            {
-                "id": "WorkstationInGameHelp",
-                "minVersion": "1.0.0"
+                "id": "InGameHelpAPI",
+                "minVersion": "0.1.0"
             },
             {
                 "id" : "WorkstationCrafting",

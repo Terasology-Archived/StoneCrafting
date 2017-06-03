@@ -16,9 +16,9 @@
 package org.terasology.stoneCrafting;
 
 public final class Stonecrafting {
-    public static final String BASIC_STONECRAFTING_PROCESS = "Stonecrafting:BasicStonecraftingProcess";
-    public static final String NOVICE_STONECRAFTING_PROCESS = "Stonecrafting:NoviceStonecraftingProcess";
-    public static final String STANDARD_STONECRAFTING_PROCESS = "Stonecrafting:StandardStonecraftingProcess";
+    public static final String BASIC_STONECRAFTING_PROCESS = "StoneCrafting:BasicStonecraftingProcess";
+    public static final String NOVICE_STONECRAFTING_PROCESS = "StoneCrafting:NoviceStonecraftingProcess";
+    public static final String STANDARD_STONECRAFTING_PROCESS = "StoneCrafting:StandardStonecraftingProcess";
 
     private Stonecrafting() {
     }

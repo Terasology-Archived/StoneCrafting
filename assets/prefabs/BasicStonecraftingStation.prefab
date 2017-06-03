@@ -12,7 +12,7 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "Stonecrafting:BasicStonecraftingProcess": false,
+            "StoneCrafting:BasicStonecraftingProcess": false,
             "ManualLabor:BasicStonecraftingProcess": false,
             "Crafting:UpgradeCraftingWorkstation": false
         }
