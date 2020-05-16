@@ -1,17 +1,20 @@
 {
-    "id" : "StoneCrafting",
-    "version" : "1.0.2-SNAPSHOT",
-    "author" : "XTariq",
-    "displayName" : "Stonecrafting",
-    "description" : "Module that introduces crafting of several stone-based items through workstations.",
-    "dependencies" : [
-            {"id": "Durability", "minVersion": "1.0.0"},
-            {"id": "InGameHelpAPI", "minVersion": "0.1.0"},
-            {"id" : "WorkstationCrafting", "minVersion" : "1.0.1"},
-            {"id" : "WoodCrafting", "minVersion" : "1.0.0"},
-            {"id" : "MultiBlock", "minVersion" : "1.0.0"},
-            {"id" : "Workstation", "minVersion" : "1.0.0"},
-            {"id" : "AnotherWorld", "minVersion" : "0.2.0"}
+    "id": "StoneCrafting",
+    "version": "1.0.2",
+    "author": "XTariq",
+    "displayName": "Stonecrafting",
+    "description": "Module that introduces crafting of several stone-based items through workstations.",
+    "dependencies": [
+        { "id": "AnotherWorld", "minVersion": "0.2.0" },
+        { "id": "CoreAssets", "minVersion": "2.0.1" },
+        { "id": "Drops", "minVersion": "1.0.1" },
+        { "id": "Durability", "minVersion": "1.0.0" },
+        { "id": "InGameHelpAPI", "minVersion": "0.1.0" },
+        { "id": "MultiBlock", "minVersion": "1.0.0" },
+        { "id": "WoodCrafting", "minVersion": "1.0.0" },
+        { "id": "Workstation", "minVersion": "1.0.0" },
+        { "id": "WorkstationCrafting", "minVersion": "1.0.1" }
     ],
-    "serverSideOnly" : false
+    "serverSideOnly": false,
+    "isLibrary": true
 }
