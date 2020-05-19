@@ -1,6 +1,6 @@
 {
     "Network": {},
-    "BlockDropGrammar": {
+    "DropGrammar": {
         "itemDrops": ["4*Woodcrafting:Stone", "2*Woodcrafting:Stick"]
     },
     "InteractionTarget": {},

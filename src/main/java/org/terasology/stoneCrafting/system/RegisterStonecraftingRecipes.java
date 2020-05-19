@@ -74,9 +74,9 @@ public class RegisterStonecraftingRecipes extends BaseComponentSystem {
 
     private void addBasicStoneWorkstationBlockShapeRecipes() {
         addWorkstationBlockShapesRecipe(Stonecrafting.BASIC_STONECRAFTING_PROCESS, "Building|Cobble Stone|Stonecrafting:CobbleBlock",
-                "Woodcrafting:stone", 2, "hammer", 1, "CoreBlocks:CobbleStone", 1);
+                "Woodcrafting:stone", 2, "hammer", 1, "CoreAssets:CobbleStone", 1);
         addWorkstationBlockShapesRecipe(Stonecrafting.STANDARD_STONECRAFTING_PROCESS, "Building|Bricks|Stonecrafting:BrickBlock",
-                "Stonecrafting:brick", 2, "hammer", 1, "CoreBlocks:Brick", 1);
+                "Stonecrafting:brick", 2, "hammer", 1, "CoreAssets:Brick", 1);
     }
 
     private void addShapeRecipe(String processType, String recipeNamePrefix, String ingredient, int ingredientBasicCount,

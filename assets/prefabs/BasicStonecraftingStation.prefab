@@ -3,7 +3,7 @@
         "name": "Basic Stonecrafting Station"
     },
     "Network": {},
-    "BlockDropGrammar": {
+    "DropGrammar": {
         "blockDrops": ["2*Woodcrafting:WoodenTable"]
     },
     "InteractionTarget": {},
