@@ -17,30 +17,18 @@ package org.terasology.stoneCrafting.ui;
 
 import org.terasology.engine.Time;
 import org.terasology.entitySystem.entity.EntityRef;
-import org.terasology.heat.component.HeatProcessedComponent;
-import org.terasology.heat.component.HeatProducerComponent;
-import org.terasology.heat.ui.ThermometerWidget;
-import org.terasology.logic.inventory.InventoryUtils;
 import org.terasology.logic.players.LocalPlayer;
-import org.terasology.processing.ui.VerticalTextureProgressWidget;
+import org.terasology.nui.UIWidget;
+import org.terasology.nui.databinding.Binding;
+import org.terasology.nui.databinding.ReadOnlyBinding;
+import org.terasology.nui.widgets.ActivateEventListener;
+import org.terasology.nui.widgets.UIButton;
+import org.terasology.nui.widgets.UILoadBar;
 import org.terasology.processing.ui.WorkstationScreenUtils;
 import org.terasology.registry.CoreRegistry;
 import org.terasology.rendering.nui.BaseInteractionScreen;
-import org.terasology.rendering.nui.NUIManager;
-import org.terasology.rendering.nui.UIWidget;
-import org.terasology.rendering.nui.databinding.Binding;
-import org.terasology.rendering.nui.databinding.ReadOnlyBinding;
 import org.terasology.rendering.nui.layers.ingame.inventory.InventoryGrid;
-import org.terasology.rendering.nui.widgets.ActivateEventListener;
-import org.terasology.rendering.nui.widgets.UIButton;
-import org.terasology.rendering.nui.widgets.UILoadBar;
-import org.terasology.workstation.component.WorkstationInventoryComponent;
 import org.terasology.workstation.component.WorkstationProcessingComponent;
-import org.terasology.workstation.event.WorkstationProcessRequest;
-import org.terasology.workstation.process.WorkstationInventoryUtils;
-import org.terasology.workstation.system.WorkstationRegistry;
-
-import java.util.List;
 
 public class QuernWindow extends BaseInteractionScreen {
     private InventoryGrid input;
