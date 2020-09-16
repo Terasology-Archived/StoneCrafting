@@ -1,6 +1,6 @@
 // Copyright 2020 The Terasology Foundation
 // SPDX-License-Identifier: Apache-2.0
-package org.terasology.milling.processPart;
+package org.terasology.stoneCrafting.milling.processPart;
 
 import org.terasology.engine.entitySystem.entity.EntityManager;
 import org.terasology.engine.entitySystem.entity.EntityRef;
@@ -16,8 +16,8 @@ import org.terasology.engine.world.block.family.BlockFamily;
 import org.terasology.engine.world.block.items.BlockItemFactory;
 import org.terasology.inventory.logic.InventoryManager;
 import org.terasology.inventory.logic.InventoryUtils;
-import org.terasology.milling.component.MillProcessedComponent;
-import org.terasology.milling.component.MillProgressComponent;
+import org.terasology.stoneCrafting.milling.component.MillProcessedComponent;
+import org.terasology.stoneCrafting.milling.component.MillProgressComponent;
 import org.terasology.workstation.component.SpecificInputSlotComponent;
 import org.terasology.workstation.component.WorkstationInventoryComponent;
 import org.terasology.workstation.process.WorkstationInventoryUtils;

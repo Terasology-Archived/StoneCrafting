@@ -1,6 +1,6 @@
 // Copyright 2020 The Terasology Foundation
 // SPDX-License-Identifier: Apache-2.0
-package org.terasology.milling.processPart;
+package org.terasology.stoneCrafting.milling.processPart;
 
 import org.terasology.engine.entitySystem.Component;
 import org.terasology.engine.network.Replicate;
