@@ -20,7 +20,7 @@ import org.terasology.engine.entitySystem.entity.EntityRef;
 import org.terasology.engine.logic.players.LocalPlayer;
 import org.terasology.engine.registry.CoreRegistry;
 import org.terasology.engine.rendering.nui.BaseInteractionScreen;
-import org.terasology.engine.rendering.nui.layers.ingame.inventory.InventoryGrid;
+import org.terasology.rendering.nui.layers.ingame.inventory.InventoryGrid;
 import org.terasology.nui.UIWidget;
 import org.terasology.nui.databinding.Binding;
 import org.terasology.nui.databinding.ReadOnlyBinding;
